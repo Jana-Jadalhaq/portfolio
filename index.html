@@ -27,12 +27,10 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <!-- RIGHT SIDE BUTTONS (FIXED POSITIONING) -->
       <div class="nav-right">
         <button id="theme-toggle" class="theme-toggle" title="Toggle theme">🌙</button>
         <button class="menu-btn" id="menu-btn">☰</button>
       </div>
-
     </div>
   </nav>
 
@@ -121,320 +119,159 @@
       </ul>
     </div>
   </section>
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <h2>Projects</h2>
 
-<!-- Projects Section -->
-<section id="projects" class="section bg-light">
-  <h2>Projects</h2>
+    <div class="projects-wrapper">
 
-  <div class="projects-wrapper">
+      <!-- PROJECT 1: IMDB MOVIE DATA ANALYSIS -->
+      <div class="project-card">
+        <h3>Movie Data Analysis — IMDB Dataset</h3>
+        <p>
+          A complete exploratory data analysis performed using Python, Pandas, and Matplotlib.
+          This project includes dataset exploration, data cleaning, duplicate removal, conditional filtering,
+          feature creation, and visualization. Insights highlight rating trends, movie revenue patterns,
+          and director performance across the IMDB dataset.
+        </p>
 
-    <!-- PROJECT 1: IMDB MOVIE DATA ANALYSIS -->
-    <div class="project-card">
-      <h3>Movie Data Analysis — IMDB Dataset</h3>
-      <p>
-        A complete exploratory data analysis performed using Python, Pandas, and Matplotlib.
-        This project includes dataset exploration, data cleaning, duplicate removal, conditional filtering,
-        feature creation, and visualization. Insights highlight rating trends, movie revenue patterns,
-        and director performance across the IMDB dataset.
-      </p>
+        <button class="project-btn" onclick="toggleImages('imdb-images')">
+          Show Project Screenshots
+        </button>
 
-      <button class="project-btn" onclick="toggleImages('imdb-images')">
-        Show Project Screenshots
-      </button>
+        <div id="imdb-images" class="project-gallery hidden">
+          <img src="images/imdb-data-preview.png" alt="Dataset Preview">
+          <img src="images/imdb-filter.png" alt="Filtering and Rating Category">
+          <img src="images/imdb-plot.png" alt="Visualization Plot">
+        </div>
 
-      <div id="imdb-images" class="project-gallery hidden">
-        <img src="images/imdb-data-preview.png" alt="Dataset Preview">
-        <img src="images/imdb-filter.png" alt="Filtering and Rating Category">
-        <img src="images/imdb-plot.png" alt="Visualization Plot">
+        <button class="project-btn"
+          onclick="window.open('https://github.com/Jana-Jadalhaq/movie-data-analysis', '_blank')">
+          View Project on GitHub
+        </button>
       </div>
 
-      <button class="project-btn"
-        onclick="window.open('https://github.com/Jana-Jadalhaq/movie-data-analysis', '_blank')">
-        View Project on GitHub
-      </button>
-    </div>
+      <!-- PROJECT 2: HOUSEHOLD POWER ANALYSIS -->
+      <div class="project-card">
+        <h3>Household Power Consumption Analysis</h3>
 
-    <!-- PROJECT 2: HOUSEHOLD POWER ANALYSIS -->
-    <div class="project-card">
-      <h3>Household Power Consumption Analysis — Lab 2</h3>
+        <p>
+          A complete data science workflow applied to the UCI Household Electric Power Consumption dataset.
+          This project focuses on loading and cleaning a large dataset, handling missing values, converting
+          timestamps, engineering time-series features, and producing visualizations showing seasonal,
+          daily, and distribution-based power usage patterns.
+        </p>
 
-      <p>
-        A complete data science workflow applied to the UCI Household Electric Power Consumption dataset.
-        This project focuses on loading and cleaning a large dataset, handling missing values, converting
-        timestamps, engineering time-series features, and producing visualizations showing seasonal,
-        daily, and distribution-based power usage patterns.
-      </p>
+        <button class="project-btn" onclick="toggleImages('lab2-images')">
+          Show Project Screenshots
+        </button>
 
-      <button class="project-btn" onclick="toggleImages('lab2-images')">
-        Show Project Screenshots
-      </button>
+        <div id="lab2-images" class="project-gallery hidden">
 
-      <div id="lab2-images" class="project-gallery hidden">
+          <div class="img-box">
+            <img src="images/dataset-preview.png" alt="Dataset Preview">
+            <p class="img-caption">Preview of the dataset after loading and extracting key features.</p>
+          </div>
 
-        <div class="img-box">
-          <img src="images/dataset-preview.png" alt="Dataset Preview">
-          <p class="img-caption">Preview of the dataset after loading and extracting key features.</p>
+          <div class="img-box">
+            <img src="images/missing-values.png" alt="Missing Values Handling">
+            <p class="img-caption">Cleaning missing values and dropping corrupted records.</p>
+          </div>
+
+          <div class="img-box">
+            <img src="images/histogram-global-active.png" alt="Histogram">
+            <p class="img-caption">Distribution of Global Active Power usage.</p>
+          </div>
+
+          <div class="img-box">
+            <img src="images/power-distribution.png" alt="Power Distribution">
+            <p class="img-caption">Daily household energy consumption distribution.</p>
+          </div>
+
+          <div class="img-box">
+            <img src="images/month-week-plot.png" alt="Month Week Plot">
+            <p class="img-caption">Power consumption across months and weekdays.</p>
+          </div>
+
+          <div class="img-box">
+            <img src="images/violin-distribution.png" alt="Violin Plot">
+            <p class="img-caption">Seasonal variations via violin visualization.</p>
+          </div>
         </div>
 
-        <div class="img-box">
-          <img src="images/missing-values.png" alt="Missing Values Handling">
-          <p class="img-caption">Cleaning missing values and dropping corrupted records.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/histogram-global-active.png" alt="Histogram">
-          <p class="img-caption">Distribution of Global Active Power usage.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/power-distribution.png" alt="Power Distribution">
-          <p class="img-caption">Daily household energy consumption distribution.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/month-week-plot.png" alt="Month Week Plot">
-          <p class="img-caption">Power consumption across months and weekdays.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/violin-distribution.png" alt="Violin Plot">
-          <p class="img-caption">Seasonal variations via violin visualization.</p>
-        </div>
-
+        <button class="project-btn"
+          onclick="window.open('https://github.com/Jana-Jadalhaq/Household-Power-Analysis', '_blank')">
+          View Project on GitHub
+        </button>
       </div>
 
-      <button class="project-btn"
-        onclick="window.open('https://github.com/Jana-Jadalhaq/Household-Power-Analysis','_blank')">
-        View Project on GitHub
-      </button>
-    </div>
+      <!-- PROJECT 3: WEATHER DATA ANALYSIS -->
+      <div class="project-card">
+        <h3>Weather Data Analysis — Python Data Science</h3>
 
-    <!-- PROJECT 3: WEATHER DATA ANALYSIS -->
-    <div class="project-card">
-      <h3>🌤 Weather Data Analysis — Python Data Science</h3>
+        <p>
+          A complete exploratory data analysis of a real-world weather dataset from Kaggle,
+          focusing on temperature trends, humidity, wind behavior, and seasonal patterns.
+        </p>
 
-      <p>
-        A complete exploratory data analysis of a real-world weather dataset from Kaggle,
-        focusing on temperature trends, humidity, wind behavior, and seasonal patterns.
-      </p>
+        <a href="https://github.com/Jana-Jadalhaq/Weather-Data-Analysis"
+           target="_blank" class="project-btn">
+          View on GitHub
+        </a>
 
-      <a href="https://github.com/Jana-Jadalhaq/Weather-Data-Analysis"
-         target="_blank" class="project-btn">
-        View on GitHub
-      </a>
+        <button class="project-btn"
+          onclick="document.getElementById('weather-details').style.display =
+          document.getElementById('weather-details').style.display === 'none' ? 'block' : 'none';">
+          Show More
+        </button>
 
-      <button class="project-btn"
-        onclick="document.getElementById('weather-details').style.display =
-        document.getElementById('weather-details').style.display === 'none' ? 'block' : 'none';">
-        Show More
-      </button>
-
-      <div id="weather-details" style="display:none; margin-top:15px;">
-        <h4>Main Highlights</h4>
-        <ul>
-          <li>Cleaning real-world weather data</li>
-          <li>Datetime conversion & time-based feature extraction</li>
-          <li>Temperature, humidity, wind, and visibility analysis</li>
-          <li>Seasonal & hourly climate pattern visualization</li>
-          <li>Correlation analysis between features</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- PROJECT 4: TWEET SENTIMENT ANALYSIS -->
-    <div class="project-card">
-      <h3>💬 Tweet Sentiment Analysis — NLP Project</h3>
-
-      <p>
-        A sentiment analysis project using real Twitter data.
-        Includes tweet cleaning, noise removal, word exploration,
-        and comparison of positive vs negative sentiment trends.
-      </p>
-
-      <a href="https://github.com/Jana-Jadalhaq/Tweet-Sentiment-Analysis"
-         target="_blank" class="project-btn">
-         View on GitHub
-      </a>
-
-      <button class="project-btn"
-        onclick="document.getElementById('tweet-details').style.display =
-        document.getElementById('tweet-details').style.display === 'none' ? 'block' : 'none';">
-        Show More
-      </button>
-
-      <div id="tweet-details" style="display:none; margin-top:15px;">
-        <ul>
-          <li>Analyzes thousands of real positive and negative tweets</li>
-          <li>Cleans raw text (mentions, URLs, emojis, punctuation)</li>
-          <li>Tokenization and stopword removal</li>
-          <li>Word frequency analysis</li>
-          <li>Word cloud generation</li>
-          <li>Sentiment comparison visualizations</li>
-        </ul>
-      </div>
-    </div>
-
-  </div> <!-- END WRAPPER -->
-</section>
-<!-- Projects Section -->
-<section id="projects" class="section bg-light">
-  <h2>Projects</h2>
-
-  <div class="projects-wrapper">
-
-    <!-- PROJECT 1: IMDB MOVIE DATA ANALYSIS -->
-    <div class="project-card">
-      <h3>Movie Data Analysis — IMDB Dataset</h3>
-      <p>
-        A complete exploratory data analysis performed using Python, Pandas, and Matplotlib.
-        This project includes dataset exploration, data cleaning, duplicate removal, conditional filtering,
-        feature creation, and visualization. Insights highlight rating trends, movie revenue patterns,
-        and director performance across the IMDB dataset.
-      </p>
-
-      <button class="project-btn" onclick="toggleImages('imdb-images')">
-        Show Project Screenshots
-      </button>
-
-      <div id="imdb-images" class="project-gallery hidden">
-        <img src="images/imdb-data-preview.png" alt="Dataset Preview">
-        <img src="images/imdb-filter.png" alt="Filtering and Rating Category">
-        <img src="images/imdb-plot.png" alt="Visualization Plot">
+        <div id="weather-details" style="display:none; margin-top:15px;">
+          <h4>Main Highlights</h4>
+          <ul>
+            <li>Cleaning real-world weather data</li>
+            <li>Datetime conversion & time-based feature extraction</li>
+            <li>Temperature, humidity, wind, and visibility analysis</li>
+            <li>Seasonal & hourly climate pattern visualization</li>
+            <li>Correlation analysis between features</li>
+          </ul>
+        </div>
       </div>
 
-      <button class="project-btn"
-        onclick="window.open('https://github.com/Jana-Jadalhaq/movie-data-analysis', '_blank')">
-        View Project on GitHub
-      </button>
-    </div>
+      <!-- PROJECT 4: TWEET SENTIMENT ANALYSIS -->
+      <div class="project-card">
+        <h3>Tweet Sentiment Analysis — NLP Project</h3>
 
-    <!-- PROJECT 2: HOUSEHOLD POWER ANALYSIS -->
-    <div class="project-card">
-      <h3>Household Power Consumption Analysis — Lab 2</h3>
+        <p>
+          A sentiment analysis project using real Twitter data.
+          Includes tweet cleaning, noise removal, word exploration,
+          and comparison of positive vs negative sentiment trends.
+        </p>
 
-      <p>
-        A complete data science workflow applied to the UCI Household Electric Power Consumption dataset.
-        This project focuses on loading and cleaning a large dataset, handling missing values, converting
-        timestamps, engineering time-series features, and producing visualizations showing seasonal,
-        daily, and distribution-based power usage patterns.
-      </p>
+        <a href="https://github.com/Jana-Jadalhaq/Tweet-Sentiment-Analysis"
+           target="_blank" class="project-btn">
+           View on GitHub
+        </a>
 
-      <button class="project-btn" onclick="toggleImages('lab2-images')">
-        Show Project Screenshots
-      </button>
+        <button class="project-btn"
+          onclick="document.getElementById('tweet-details').style.display =
+          document.getElementById('tweet-details').style.display === 'none' ? 'block' : 'none';">
+          Show More
+        </button>
 
-      <div id="lab2-images" class="project-gallery hidden">
-
-        <div class="img-box">
-          <img src="images/dataset-preview.png" alt="Dataset Preview">
-          <p class="img-caption">Preview of the dataset after loading and extracting key features.</p>
+        <div id="tweet-details" style="display:none; margin-top:15px;">
+          <ul>
+            <li>Analyzes thousands of real positive and negative tweets</li>
+            <li>Cleans raw text (mentions, URLs, emojis, punctuation)</li>
+            <li>Tokenization and stopword removal</li>
+            <li>Word frequency analysis</li>
+            <li>Word cloud generation</li>
+            <li>Sentiment comparison visualizations</li>
+          </ul>
         </div>
-
-        <div class="img-box">
-          <img src="images/missing-values.png" alt="Missing Values Handling">
-          <p class="img-caption">Cleaning missing values and dropping corrupted records.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/histogram-global-active.png" alt="Histogram">
-          <p class="img-caption">Distribution of Global Active Power usage.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/power-distribution.png" alt="Power Distribution">
-          <p class="img-caption">Daily household energy consumption distribution.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/month-week-plot.png" alt="Month Week Plot">
-          <p class="img-caption">Power consumption across months and weekdays.</p>
-        </div>
-
-        <div class="img-box">
-          <img src="images/violin-distribution.png" alt="Violin Plot">
-          <p class="img-caption">Seasonal variations via violin visualization.</p>
-        </div>
-
       </div>
 
-      <button class="project-btn"
-        onclick="window.open('https://github.com/Jana-Jadalhaq/Household-Power-Analysis','_blank')">
-        View Project on GitHub
-      </button>
-    </div>
-
-    <!-- PROJECT 3: WEATHER DATA ANALYSIS -->
-    <div class="project-card">
-      <h3>🌤 Weather Data Analysis — Python Data Science</h3>
-
-      <p>
-        A complete exploratory data analysis of a real-world weather dataset from Kaggle,
-        focusing on temperature trends, humidity, wind behavior, and seasonal patterns.
-      </p>
-
-      <a href="https://github.com/Jana-Jadalhaq/Weather-Data-Analysis"
-         target="_blank" class="project-btn">
-        View on GitHub
-      </a>
-
-      <button class="project-btn"
-        onclick="document.getElementById('weather-details').style.display =
-        document.getElementById('weather-details').style.display === 'none' ? 'block' : 'none';">
-        Show More
-      </button>
-
-      <div id="weather-details" style="display:none; margin-top:15px;">
-        <h4>Main Highlights</h4>
-        <ul>
-          <li>Cleaning real-world weather data</li>
-          <li>Datetime conversion & time-based feature extraction</li>
-          <li>Temperature, humidity, wind, and visibility analysis</li>
-          <li>Seasonal & hourly climate pattern visualization</li>
-          <li>Correlation analysis between features</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- PROJECT 4: TWEET SENTIMENT ANALYSIS -->
-    <div class="project-card">
-      <h3>💬 Tweet Sentiment Analysis — NLP Project</h3>
-
-      <p>
-        A sentiment analysis project using real Twitter data.
-        Includes tweet cleaning, noise removal, word exploration,
-        and comparison of positive vs negative sentiment trends.
-      </p>
-
-      <a href="https://github.com/Jana-Jadalhaq/Tweet-Sentiment-Analysis"
-         target="_blank" class="project-btn">
-         View on GitHub
-      </a>
-
-      <button class="project-btn"
-        onclick="document.getElementById('tweet-details').style.display =
-        document.getElementById('tweet-details').style.display === 'none' ? 'block' : 'none';">
-        Show More
-      </button>
-
-      <div id="tweet-details" style="display:none; margin-top:15px;">
-        <ul>
-          <li>Analyzes thousands of real positive and negative tweets</li>
-          <li>Cleans raw text (mentions, URLs, emojis, punctuation)</li>
-          <li>Tokenization and stopword removal</li>
-          <li>Word frequency analysis</li>
-          <li>Word cloud generation</li>
-          <li>Sentiment comparison visualizations</li>
-        </ul>
-      </div>
-    </div>
-
-  </div> <!-- END WRAPPER -->
-</section>
-
-
-
-
-</section>
+    </div> <!-- END WRAPPER -->
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="section bg-light">
